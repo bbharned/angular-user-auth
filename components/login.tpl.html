@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<md-content>
+<md-toolbar>
+    <div class="md-toolbar-tools content-box">
+        <h5>Welcome <span style="font-weight:bold;">Rockwell</span> Partners</h5> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;
+        
+        <!--<md-button ng-click="vm.newUserScreen()">
+            <md-icon class="mdi mdi-plus-circle"></md-icon>
+            Register New User
+        </md-button>-->
+    </div>
+</md-toolbar>
+    
+<div class="action-box">
+	<div id="login">
+    <form novalidate class="simple-form">
+    <h2>Log In</h2>
+	<md-input-container layout="row">
+		<label>Enter Email</label>
+		<input type="text" ng-model="useremail">
+	</md-input-container>
+    
+    <md-input-container layout="row">
+		<label>Enter Password</label>
+		<input type="password" ng-model="userpw">
+	</md-input-container>
+    <p class="reset-link"><a ng-href="#/reset">forgot password?</a></p>
+    <br />
+    <div layout="row" style="float:right; margin-right:-25px;">
+        <md-button ng-click="vm.login()">Log In</md-button>
+    </div>
+    </form>
+    </div>  
+</div> 
+<div class="content-box">
+	<p class="need-login">Are you a Rockwell partner that needs a login? <span class="goAway"><br /></span>Email us at info@thinmanager.com</p>
+</div>
+</md-content>
+</html>

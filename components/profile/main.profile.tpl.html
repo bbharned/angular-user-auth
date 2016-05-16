@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<md-content>
+<md-toolbar>
+    <div class="md-toolbar-tools content-box">
+        <h5><span style="font-weight:bold;">Rockwell</span> Partner Profile</h5> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;
+        <md-button ng-click="vm.goHome()">
+            <md-icon class="mdi mdi-home"></md-icon>
+            Home
+        </md-button>    
+        
+    </div>
+</md-toolbar>
+ 
+<div class="action-box-profile">
+	
+    
+    <form novalidate class="simple-form">
+    <h2>Reset Your Password</h2>
+	
+    <md-input-container layout="row">
+		<label>Enter Email*</label>
+		<input type="text" ng-model="email" required />
+	</md-input-container>
+    
+    <md-input-container layout="row">
+		<label>Current Password*</label>
+		<input type="password" ng-model="temppassword" required />
+	</md-input-container>
+    
+    <md-input-container layout="row">
+		<label>Enter New Password*</label>
+		<input type="password" ng-model="newpassword" required />
+	</md-input-container>
+    
+    <md-input-container layout="row">
+		<label>ReEnter New Password*</label>
+		<input type="password" ng-model="newpassconfirm" required />
+	</md-input-container>
+    
+    <br />
+    <div layout="row" style="float:right; margin-right:-25px;">
+        <md-button ng-click="vm.changePassword(email,temppassword,newpassword)">Reset Password</md-button>
+    </div>
+    </form>
+</div> 
+
+</md-content>
+</html>

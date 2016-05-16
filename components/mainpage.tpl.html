@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<md-toolbar>
+    <div class="md-toolbar-tools content-box">
+        <h5><span style="font-weight:bold;">Rockwell</span> Partners</h5> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;
+        
+        <md-button ng-click="vm.logUserOut()">
+            <md-icon class="mdi mdi-logout"></md-icon>
+            Log Out
+        </md-button>
+    </div>
+</md-toolbar>
+<div class="content-box"> 
+
+    <p class="disclaimer">By using this partner portal you agree that any information viewed, copied and/or downloaded will remain as non-disclosable information. This includes, but is not limited to, the ACP product price list, partner-specific videos, strategic information such as product path planning, etc. This portal is for the sole benefit of your specific channel and access to confidential information in the portal is only meant to be shared within the ACP/Channel Partner relationship.</p>
+   
+</div>
+
+
+<br /><br />
+<p align="center" style="color:white; background-color:#003366; padding:15px 0px; font-weight:bold; font-size:1.35em; line-height:1.35em; margin:auto; margin-bottom:30px; ">** ThinManager 9 is Now Available!! ** <a ng-href="https://downloads.thinmanager.com"><md-button class="md-raised" style="padding:0px 20px !important;">Download Now &raquo;</md-button></a></p>
+
+<div class="feature-vid">
+	<video id="classVideo" controls>
+        <source src="../../../partner-resources/Channel-Only-ThinManager-9-Features.mov" type="video/mp4"></source>
+        <!--<source src="#" type="video/ogg"></source>-->
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+
+
+
+<md-content class="content-box main-page-cards" layout="row" layout-wrap>
+
+<md-card flex-xl="30" flex-lg="30" flex-md="30" flex-sm="100" flex-xs="100">
+	<md-card-content >
+	
+    	<h3 class="md-headline">ThinManager<br /><span>Price List</span></h3>
+    	<!--<p>All our core pricing options are kept up to date at all times.</p>
+        <p>Find what you are looking for, what the cost is, and what your margin is.</p>-->
+        <p>Please let us know if you have any questions, we would be happy to help. </p>
+    	<div align="right"><md-button ng-click="vm.getPricing()" style="color:blue;">View Current Price List &raquo;</md-button></div>	
+
+	</md-card-content>
+</md-card>
+
+<md-card flex-xl="30" flex-lg="30" flex-md="30" flex-sm="100" flex-xs="100">
+	<md-card-content >
+	
+    	<h3 class="md-headline">Channel Specific<br /><span>Events</span></h3>
+    	<!--<p>Whether it is a stop when we are on the road, a ThinManager training, a live webinar, or presenting at a partner event; we are always happy to show off ThinManager.</p>-->
+        <p>Want to see where and when we will be there?  Click below to see the Rockwell Automation events page.</p>
+        
+    	<div align="right"><md-button ng-click="vm.goToEvents()" style="color:blue;">View Events &raquo;</md-button></div>	
+
+	</md-card-content>
+</md-card>
+
+
+<md-card flex-xl="30" flex-lg="30" flex-md="30" flex-sm="100" flex-xs="100">
+	<md-card-content >
+		<h3 class="md-headline">Deployment<br /><span>Documents</span></h3>
+    	<!--<h3 class="md-headline">ThinManager<br /><span>Presentations</span></h3>
+        <h4 class="md-subheading">and Rockwell Papers</h4>
+    	<p>Presenting ThinManager? Need to know more about the relationship between ThinManager and Rockwell Automation?</p>
+        <p>Let us help guide you on covering the who, what, where, when and how of ThinManager as well as everything you need to 
+        know about ThinManager and Rockwell working together.</p>-->
+        <p>Let us help guide you on covering how ThinManager and Rockwell Automation products work together.</p>
+    	<div align="right"><!--<a ng-href="../../partner-resources/ThinManager-Deck-20160311.pptx" target="_blank">-->
+        <md-button ng-click="vm.viewPresentations()" style="color:blue;">View Deployment Docs &raquo;</md-button><!--</a>--></div>	
+
+	</md-card-content>
+</md-card>
+
+
+
+
+
+<md-card id="quote-card">
+	<md-card-content>
+		<h4>Need Help or a Quote?</h4>
+        <md-card class="contact-acp">
+        	<img src="images/dougcoulter.png" alt="Doug Coulter" />
+            <div layout="row" style="width:150px; margin:auto; text-align:center;"> 
+                <h3>Doug Coulter</h3>
+                <a href="images/Doug Coulter.vcf" target="_blank" download="images/Doug Coulter.vcf"><div class="v-card"></div></a>
+            </div>
+            <p>Senior Solution Architect<br />678-580-6445<br /><a href="mailto:dcoulter@thinmanager.com">dcoulter@thinmanager.com</a></p>
+        </md-card>
+        <md-card class="contact-acp">
+        	<img src="images/mikes.png" alt="Mike Smoltz" />
+            <div layout="row" style="width:150px; margin:auto; text-align:center;">
+                <h3>Mike Smoltz</h3>
+                <a href="images/Michael Smoltz.vcf" target="_blank" download="images/Michael Smoltz.vcf"><div class="v-card"></div></a>
+            </div>
+            <p>VP of Business Development<br />Director of Rockwell Sales<br />770-330-3671<br /><a href="mailto:msmoltz@thinmanager.com">msmoltz@thinmanager.com</a></p>
+        </md-card>
+        <md-card class="contact-acp">
+        	<img src="images/alexm.png" alt="Alex Miller" />
+            <div layout="row" style="width:130px; margin:auto; text-align:center;">
+                <h3>Alex Miller</h3>
+                <a href="images/Alex Miller.vcf" target="_blank" download="images/Alex Miller.vcf"><div class="v-card"></div></a>
+            </div>
+            <p>Business Development Specialist<br />678-580-6450<br /><a href="mailto:amiller@thinmanager.com">amiller@thinmanager.com</a></p>
+        </md-card>
+	</md-card-content>
+</md-card>
+
+
+
+
+
+
+
+
+
+<md-card flex-xl="30" flex-lg="30" flex-md="30" flex-sm="100" flex-xs="100">
+	<md-card-content >
+	
+    	<h3 class="md-headline">Partner<br /><span>Branding</span></h3>
+    	<p>We have created a guide showing several options on the proper way to add the ThinManager brand to your website. </p>
+        <p>Depending on the available space available on your website, you can choose an option that suits you best.</p>
+        
+    	<div align="right"><a ng-href="http://www.thinmanager.com/partners/branding"><md-button>View Branding Assets &raquo;</md-button></a></div>	
+
+	</md-card-content>
+</md-card>
+
+<md-card flex-xl="30" flex-lg="30" flex-md="30" flex-sm="100" flex-xs="100">
+	<md-card-content >
+	
+    	<h3 class="md-headline">ThinManager Software<br /><span>Product Path</span></h3>
+    	<p>The developers and support staff and ACP make it a priority to give our customers the latest and greatest features.</p>
+        <p>Get a glimpse into the future of the ThinManager Platform right now by viewing the product paths.</p>
+        <p><span style="font-weight:bold;">* PRIVILEGED INFO *</span> - 
+        <span style="font-size:.85em; color:red;">We may or may not develop any of these technologies.</span></p>
+    	<div align="right" layout="row"><a ng-href="../../partner-resources/ThinManager-Product-Path-3-Month.pdf" target="_blank">
+        <md-button>3 Month Path &raquo;</md-button></a>
+        <a ng-href="../../partner-resources/ThinManager-Product-Path-2-Year.pdf" target="_blank">
+        <md-button>2 Year Path &raquo;</md-button></a></div>	
+
+	</md-card-content>
+</md-card>
+
+<md-card flex-xl="30" flex-lg="30" flex-md="30" flex-sm="100" flex-xs="100">
+	<md-card-content >
+	
+    	<h3 class="md-headline">ThinManager<br /><span>Support</span></h3>
+    	<p>Available for everyone, our media center has everything you need to learn, present and deploy ThinManager.</p>
+        <div align="right" style="margin-bottom:15px;"><a ng-href="../../media/"><md-button ngclick="#">View Media Center &raquo;</md-button></a></div>
+        <p>You can also check out our knowledge base that is updated daily by our engineers and tech support staff.</p>
+        <div align="right"><a ng-href="http://www.thinmanager.com/kb/index.php/Special:AllPages"><md-button>View Knowledge Base &raquo;</md-button></a></div>	
+
+	</md-card-content>
+</md-card>
+
+</md-content>
+
+
+
+
+</html>

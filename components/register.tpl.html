@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<md-content>
+<md-toolbar>
+    <div class="md-toolbar-tools content-box">
+        <h5>Welcome <span style="font-weight:bold;">GE</span></h5> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;
+            
+        <md-button ng-click="vm.loginUserScreen()">
+            <md-icon class="mdi mdi-account"></md-icon>
+            User Login
+        </md-button>
+    </div>
+</md-toolbar>
+    
+<div class="action-box-register" layout-wrap layout-margin layout-align="center">
+	<div id="login">
+    <form novalidate class="simple-form">
+    <h2>Register New User</h2>
+	<md-input-container layout="row" >
+		<label>Name*</label>
+		<input type="text" ng-model="registername" required />
+	</md-input-container>
+    
+    <md-input-container layout="row">
+		<label>Company*</label>
+		<input type="text" ng-model="registercompany" required />
+	</md-input-container>
+    
+    <md-input-container layout="row">
+		<label>Enter Email*</label>
+		<input type="text" ng-model="registeremail" required />
+	</md-input-container>
+    
+    <md-input-container layout="row">
+		<label>Enter Password*</label>
+		<input type="password" ng-model="registerpassword" required />
+	</md-input-container>
+    
+    <md-input-container layout="row">
+		<label>ReEnter Password*</label>
+		<input type="password" ng-model="reenterpassword" required />
+	</md-input-container>
+    
+    <br />
+    <div layout="row" style="float:right;">
+        <md-button ng-click="vm.checkForm()">Register</md-button>
+    </div>
+    </form>
+    </div>  
+</div> 
+
+</md-content>
+</html>
